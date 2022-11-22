@@ -1,0 +1,125 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+
+:root {
+  --moderateViolet: hsl(263, 55%, 52%);
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayOpacityHalf: hsla(0, 0%, 81%, 0.5);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+  --fs: 13px;
+  --ff: "Barlow Semi Condensed", sans-serif;
+  --fw500: 500;
+  --fw600: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff);
+  font-weight: var(--fw500);
+  font-size: var(--fs);
+  background-color: var(--lightGrayishBlue);
+}
+
+body {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 100vw;
+  padding: 60px 20px;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 25px 0;
+  padding: 32px 28px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header > img {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--lightGrayOpacityHalf);
+}
+
+.name {
+  font-size: var(--fs);
+  font-weight: var(--fw600);
+  line-height: 1.5;
+  color: var(--lightGray);
+}
+
+.verified {
+  color: var(--lightGrayOpacityHalf);
+  font-size: 12px;
+}
+
+.describe {
+  margin: 15px 0;
+  font-size: 17px;
+  font-weight: var(--fw600);
+  line-height: 1.5;
+  color: var(--lightGray);
+}
+
+.review {
+  color: var(--lightGray);
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+.card1 {
+  background-color: var(--moderateViolet);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 0%;
+}
+
+.card2 {
+  background-color: var(--veryDarkGrayishBlue);
+}
+
+.card3,
+.card5 {
+  background-color: var(--white);
+}
+
+.card3 .describe,
+.card5 .describe {
+  color: var(--veryDarkGrayishBlue);
+}
+
+.card3 .person .name {
+  color: var(--lightGray);
+}
+
+.card4 {
+  background-color: var(--veryDarkBlackishBlue);
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
