@@ -1,0 +1,210 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+
+:root {
+  --moderateViolet: hsl(263, 55%, 52%);
+  --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --veryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --lightGray: hsl(0, 0%, 81%);
+  --lightGrayOpacityHalf: hsla(0, 0%, 81%, 0.5);
+  --lightGrayishBlue: hsl(210, 46%, 95%);
+  --fs: 13px;
+  --ff: "Barlow Semi Condensed", sans-serif;
+  --fw500: 500;
+  --fw600: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff);
+  font-weight: var(--fw500);
+  font-size: var(--fs);
+  background-color: var(--lightGrayishBlue);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 100vw;
+  padding: 60px 20px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 10px;
+  margin: 25px 0;
+  padding: 32px 28px;
+  box-shadow: 2px 2px 10px 1px var(--veryDarkGrayishBlue);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header > img {
+  display: inline-block;
+  width: auto;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid var(--lightGrayOpacityHalf);
+}
+
+.name {
+  font-size: var(--fs);
+  font-weight: var(--fw600);
+  line-height: 1.5;
+  color: var(--lightGray);
+}
+
+.verified {
+  color: var(--lightGrayOpacityHalf);
+  font-size: 12px;
+}
+
+.describe {
+  margin: 15px 0;
+  font-size: 18px;
+  font-weight: var(--fw600);
+  line-height: 1.3;
+  color: var(--lightGray);
+}
+
+.review {
+  color: var(--lightGray);
+  opacity: 0.7;
+  line-height: 1.3;
+}
+
+.card1 {
+  background-color: var(--moderateViolet);
+  background-image: url(images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 85% 0%;
+}
+
+.card2 {
+  background-color: var(--veryDarkGrayishBlue);
+}
+
+.card3,
+.card5 {
+  background-color: var(--white);
+}
+
+.card3 .describe,
+.card5 .describe,
+.card3 .person .name,
+.card5 .person .name,
+.card3 .verified,
+.card5 .verified,
+.card3 .review,
+.card5 .review {
+  color: var(--veryDarkGrayishBlue);
+  opacity: 0.9;
+}
+
+.card3 .verified,
+.card5 .verified {
+  opacity: 0.5;
+}
+
+.card3 .verified,
+.card5 .verified {
+  opacity: 0.7;
+}
+
+.card4 {
+  background-color: var(--veryDarkBlackishBlue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1020px) {
+  .container {
+    padding: 90px 100px;
+    max-width: 1440px;
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+    grid-template-areas:
+      "card1 card1 card2 card5"
+      "card3 card4 card4 card5";
+  }
+  .card1 {
+    grid-area: card1;
+  }
+  .card2 {
+    grid-area: card2;
+  }
+  .card3 {
+    grid-area: card3;
+  }
+  .card4 {
+    grid-area: card4;
+  }
+  .card5 {
+    grid-area: card5;
+  }
+
+  .card {
+    margin: 0;
+    padding: 25px 39px;
+  }
+
+  .header > img {
+    height: 35px;
+  }
+
+  .header > img:hover {
+    transform: rotate3d(0, 1, 0, 60deg);
+  }
+
+  .header > img,
+  .name {
+    cursor: pointer;
+  }
+
+  .name:hover {
+    color: var(--white);
+  }
+
+  .card3 .name:hover,
+  .card5 .name:hover {
+    color: black;
+  }
+
+  .describe {
+    margin: 15px 0 20px;
+  }
+
+  .review {
+    line-height: 1.5;
+  }
+
+  .card1 {
+    background-position: 80% 0%;
+  }
+}
