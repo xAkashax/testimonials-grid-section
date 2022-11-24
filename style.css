@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
-=======
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap';
->>>>>>> e1de1b8c42e010a064e11c66d519a3ef1b16a4d3
 
 :root {
   --moderateViolet: hsl(263, 55%, 52%);
@@ -51,7 +47,9 @@ body {
   border-radius: 10px;
   margin: 25px 0;
   padding: 32px 28px;
-  box-shadow: 2px 2px 10px 1px var(--veryDarkGrayishBlue);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .header {
