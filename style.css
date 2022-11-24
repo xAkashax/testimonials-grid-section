@@ -70,7 +70,7 @@ body {
   font-size: var(--fs);
   font-weight: var(--fw600);
   line-height: 1.5;
-  color: var(--lightGray);
+  color: var(--white);
 }
 
 .verified {
@@ -83,7 +83,8 @@ body {
   font-size: 22px;
   font-weight: var(--fw600);
   line-height: 1.3;
-  color: var(--lightGray);
+  color: var(--white);
+  opacity: 0.8;
 }
 
 .review {
