@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor.io](https://your-solution-url.com)
-- Live Site URL: [Live Demo](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor.io](https://www.frontendmentor.io/solutions/testimonials-grid-section-RIRx3aEoQT)
+- Live Site URL: [Live Demo](https://tangerine-crisp-fa889a.netlify.app/)
 
 ## My process
 
